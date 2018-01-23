@@ -1,0 +1,26 @@
+@import 'reset.css';
+body,
+html {
+    background: #FAF9FA;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    background: #2B9388;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 1.75em;
+    color: #FAF9FA;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
