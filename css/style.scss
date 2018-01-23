@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|VT323');
+// font-family: 'VT323', monospace;
+// font-family: 'Ubuntu', sans-serif;
+body,
+html {
+    background: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+    color: #272B34;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+legend {
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    padding: .5em 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: #272B34;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.thick {
+    height: 4px;
+    margin-top: 1em;
+    margin-bottom: 4px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #2B9388;
+    h1 {
+        font-size: 2em;
+    }
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background: rgb(255, 150, 164);
+    .headings {
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+    .form {
+        background: #fad544;
+        margin: 0 auto;
+        padding: 1.5em;
+        [required]::placeholder {
+            text-align: right;
+            color: #afafaf;
+            font-style: italic;
+        }
+        [required] {
+            box-shadow: none;
+        }
+        // Global Styles 
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 1em 1.2em;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #zipcode {
+            width: 50%;
+        }
+        // Global Styles
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 30px;
+        }
+        .contact {
+            // background: #ffe682;
+            #state {
+                width: 100%;
+            }
+        }
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        width: 500px;
+        margin: 0 auto;
+        .contact {
+            label {
+                display: inline;
+            }
+        }
+    }
+}
