@@ -1,5 +1,4 @@
 @import 'reset.css';
-@import 'set1.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|VT323');
 
 /* font-family: 'VT323', monospace;
@@ -131,6 +130,12 @@ textarea {
     max-width: 50%;
 }
 
+input:focus {
+    transition: all 400ms ease-in-out;
+    background: #aaa9a9;
+    color: white;
+}
+
 input::placeholder {
     font-size: .8em;
     text-align: right;
@@ -181,10 +186,4 @@ input[type="checkbox"] {
     .form {
         max-width: 800px;
     }
-}
-
-input:focus {
-    transition: all 500ms ease-in-out;
-    background: rgb(161, 161, 161);
-    color: white;
 }
