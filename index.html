@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Code Review</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,65 +16,67 @@
     </header>
 
     <div class="wrapper">
-        <div>
+        <div class="headings">
             <h2>
                 Signup for our newsletter
             </h2>
             <p>Get the latest news on how your code is doing in right in your inbox</p>
         </div>
+        <hr class="thick">
         <hr>
-        <hr>
-        <form action="index.html" method="post">
+        <form action="index.html" method="post" class="form">
 
-            <fieldset>
+            <fieldset class="contact-field">
                 <legend>
                     Contact Information
                 </legend>
-                <label for="name">Full Name</label>
-                <input type="text" name="user_name" id="name" placeholder="Required">
+                <label for="name">Full Name </label>
+                <input type="text" name="user_name" id="name" placeholder="Required"><br>
 
-                <label for="email-id">Email Address</label>
-                <input type="email" name="user_email" id="email-id" placeholder="Required">
+                <label for="email-id">Email Address </label>
+                <input type="email" name="user_email" id="email-id" placeholder="Required"><br>
 
-                <label for="phone">Phone</label>
-                <input type="tel" name="user_phone" id="phone">
+                <label for="phone">Phone </label>
+                <input type="tel" name="user_phone" id="phone"><br>
 
-                <label for="address">Street Address</label>
-                <input type="text" name="user_address" id="address">
+                <label for="address">Street Address </label>
+                <input type="text" name="user_address" id="address"><br>
 
-                <label for="city">City</label>
-                <input type="text" name="user_city" id="city">
+                <label for="city">City </label>
+                <input type="text" name="user_city" id="city"><br>
 
-                <label for="states">States </label>
+                <label for="states">States  </label>
 
                 <!-- State select drop down  -->
                 <select name="state" id="states">
-                <optgroup label="Select One">
+                <option value="Choose State">Choose State</option>
+                <optgroup label="Select One" class="options" >
                     <option value="AL">AL</option>
                     <option value="BO">BO</option>
                     <option value="CH">CH</option>
                     <option value="PS">PS</option>
                     <option value="WA">WA</option>
-                </optgroup label="Select One" >
+                </optgroup>
+                
                 </select>
+                <br>
 
-                <label for="zipcode">Zip Code</label>
+                <label for="zipcode">Zip Code </label>
                 <input type="text" name="user_zipcode" id="zipcode">
 
             </fieldset>
 
-            <fieldset>
-                <legend>Newsletter</legend>
+            <fieldset class="newsletter-field">
+                <legend>Newsletter <i class="fas fa-newspaper"></i></legend>
                 <p>Select the newsletters you would like to recieve</p>
 
                 <input type="checkbox" name="newsletters" id="html-news" value="html_news">
                 <label for="html-news">HTML News</label><br>
 
-                <input type="checkbox" name="newsletters" id="css-news" value="css_news">
-                <label for="css-news">CSS News</label><br>
+                <input type="checkbox" name="newsletters" id="css-news" value="css_news"><label for="css-news">CSS News</label><br>
 
                 <input type="checkbox" name="newsletters" id="js-news" value="js_news">
-                <label for="js-news">Javascript News</label><br>
+                <label for="js-news"> <i class="fab fa-js-square"></i> News</label><br>
 
                 <p>Newsletter Format</p>
 
@@ -84,13 +87,14 @@
                 <label for="html-format">Plain Text</label><br>
 
                 <label for="comment">Other topics you'd like to hear about</label>
-                <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                <textarea name="comments" id="comment"></textarea>
 
             </fieldset>
 
             <button type="submit">Sign Up</button>
-            <legend>Copyright The Code Review</legend>
+
         </form>
+        <h6><i class="fas fa-copyright"></i> The Code Review</h6>
     </div>
 </body>
 
