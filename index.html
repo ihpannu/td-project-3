@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,6 +31,8 @@
                     <legend>Contact Information</legend>
 
                     <label for="name">Full Name</label>
+                    <!-- -----
+                          -->
                     <input type="text" name="" id="name" placeholder="Required" required>
 
                     <label for="mail">Email Address</label>
@@ -48,7 +51,7 @@
                     <select name="states" id="state">
                   <optgroup>
 
-                    <option value="choose_state" selected disabled >Choose State</option>
+                    <option value="choose_state" selected disabled >Choose State  </option>
                     <option value="Alaska">AL</option>
                     <option value="JK">JK</option>
                     <option value="CD">CD</option>
@@ -68,31 +71,47 @@
                 </fieldset>
 
                 <fieldset class="newsletter">
-                    <legend>Newsletter</legend>
-                    <label for="">Select the newsletters you would like to recieve</label><br>
+                    <legend>Newsletter <i class="fas fa-newspaper"></i></legend>
+                    <label class="news-titles" for="">Select the newsletters you would like to recieve</label><br>
 
-                    <input type="checkbox" name="html_news" id="html-news"><label for="html-news">HTML News</label><br>
 
-                    <input type="checkbox" name="css_news" id="css-news"><label for="css-news">CSS News</label><br>
+                    <input type="checkbox" checked="checked" name="html_news" id="html-news">
+                    <label class="labels" for="html-news">HTML News</label>
 
-                    <input type="checkbox" name="js_news" id="js-news"><label for="js-news">Javascript News</label><br>
+                    <br>
 
-                    <label for="">Newsletter Format</label><br>
+                    <input type="checkbox" name="css_news" id="css-news">
+                    <label class="labels" for="css-news">CSS News</label>
+                    <br>
 
-                    <input type="radio" name="html_form" id="html-form">
-                    <label for="html-form">HTML</label><br>
+                    <input type="checkbox" name="js_news" id="js-news">
+                    <label class="labels" for="js-news">Javascript News</label>
+                    <br>
 
-                    <input type="radio" name="plain_text" id="plain-text">
-                    <label for="plain-text">Plain Text</label><br>
+                    <label class="news-titles" for="">Newsletter Format</label><br>
 
-                    <label for="">Other topics you'd like to hear about</label><br>
+
+                    <input type="radio" name="format" id="html-form">
+                    <label for="html-forms" class="labels">HTML</label><br>
+
+
+                    <input type="radio" name="format" id="plain-text">
+                    <label for="plain-text" class="labels">CSS</label><br>
+
+
+                    <label class="news-titles" for="">Other topics you'd like to hear about</label><br>
                     <textarea name="comments" id="comment"></textarea>
+                    <div>
+                        <button class="btn" type="submit">Sign Up</button>
+                    </div>
+
                 </fieldset>
-                <button type="submit">Sign Up</button>
+
+
             </form>
         </div>
         <footer>
-            <h1>&copy; The Code Review</h1>
+            <h2><i class="fas fa-copyright"></i> The Code Review</h2>
         </footer>
     </div>
 </body>
